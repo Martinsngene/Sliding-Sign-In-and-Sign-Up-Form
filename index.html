@@ -22,6 +22,59 @@
 
 </head>
 <body>
+
+	<div class="containerbox" id="containerbox">
+	<div class="form-container-2 sign-up-container-2">
+		<form action="#">
+			<h1>Create Account</h1>
+			<div class="social-container-2">
+				<a href="#" class="social-2"><i class="fab fa-linkedin-in"></i></a>
+				
+				<a href="#" class="social-2"><i class="fab fa-instagram"></i></a>
+				
+				<a href="#" class="social-2"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<span>or use your email for registration</span>
+			<input type="text" placeholder="Name" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<button>Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container-2 sign-in-container-2">
+		<form action="#">
+			<h1>Sign in</h1>
+			<div class="social-container-2">
+				<a href="#" class="social-2"><i class="fab fa-linkedin-in"></i></a>
+				
+				<a href="#" class="social-2"><i class="fab fa-instagram"></i></a>
+				
+				<a href="#" class="social-2"><i class="fab fa-facebook-f"></i></a>
+			</div>
+			<span>or use your account</span>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<a href="#">Forgot your password?</a>
+			<button>Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container-2">
+		<div class="overlay-2">
+			<div class="overlay-panel-2 overlay-left-2">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signinbtn">Sign In</button>
+			</div>
+			<div class="overlay-panel-2 overlay-right-2">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signupbtn">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
 	<div class="container" id="container">
 	<div class="form-container sign-up-container">
 		<form action="#">
@@ -72,6 +125,28 @@
 		</div>
 	</div>
 </div>
+
+<script type="text/javascript">
+		
+		const upSign = document.getElementById('#signUping')
+		const inSign = document.getElementById('#signIning')
+		const box = document.getElementById('#containerbox')
+
+			upSign.addEventListener('click', () =>
+
+					box.classList.add('right-panel-activate')
+			
+			);
+
+			inSign.addEventListener('click', () =>
+
+					box.classList.remove('right-panel-activate')
+
+			);
+
+
+	</script>
+
 <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
